@@ -75,15 +75,38 @@
 					<a href="#">Для стройки</a>
 					<img src="img/paint-img.png">
 				</div>
-				<div class="reason slider">
-					<div class="promo">
-						<h2>Перфораторы</h2>
-						<span>Настроящие мужские игрушки</span>
+
+				<!--СЛАЙДЕР-->
+
+				<div class="slider">
+					<div class="slide">
+						<div class="slider-title">
+							<h2>Перфораторы</h2>
+							<span>Настроящие мужские игрушки</span>
+						</div>
+						<button><i></i></button>
+						<button><i></i></button>
+						<a href="#">Открыть каталог</a>
+						<div class="slider-control">
+							<i></i><i></i>
+						</div>
 					</div>
-					<button><i></i></button>
-					<button><i></i></button>
-					<a href="#">Открыть каталог</a>
+					<div class="slide">
+						<div class="slider-title">
+							<h2>Дрели</h2>
+							<span>Соседям на радость</span>
+						</div>
+						<button><i></i></button>
+						<button><i></i></button>
+						<a href="#">Открыть каталог</a>
+						<div class="slider-control">
+							<i></i><i></i>
+						</div>
+					</div>
 				</div>
+
+				<!--СЛАЙДЕР ЗАКОНЧИЛСЯ ))-->
+
 				<div class="reason discounts">
 					<h2>Скидки 50%</h2>
 					<a href="#">На 350 товаров</a>
@@ -164,28 +187,28 @@
 					<a href="#">Все производители</a>
 				</div>
 				<div class="manufacturer-item">
-					<img src="img/bfg-9000-img.png">
+					<img src="img/bosch-img.png">
 				</div>
 				<div class="manufacturer-item">
-					<img src="img/bfg-9000-img.png">
+					<img src="img/makita-img.png">
 				</div>
 				<div class="manufacturer-item">
-					<img src="img/bfg-9000-img.png">
+					<img src="img/dewalt-img.png">
 				</div>
 				<div class="manufacturer-item">
-					<img src="img/bfg-9000-img.png">
+					<img src="img/interskol-img.png">
 				</div>
 				<div class="manufacturer-item">
-					<img src="img/bfg-9000-img.png">
+					<img src="img/hitachi-img.png">
 				</div>
 				<div class="manufacturer-item">
-					<img src="img/bfg-9000-img.png">
+					<img src="img/lg-img.png">
 				</div>
 				<div class="manufacturer-item">
-					<img src="img/bfg-9000-img.png">
+					<img src="img/aeg-img.png">
 				</div>
 				<div class="manufacturer-item">
-					<img src="img/bfg-9000-img.png">
+					<img src="img/metabo-img.png">
 				</div>
 			</section>
 
@@ -205,14 +228,30 @@
 							<li><a href="#">Кредит</a></li>
 						</ul>
 					</div>
-					<div class="delivery">
-						<h2>Доставка</h2>
-						<p>Мы с удовольствием доставим ваш товар прямо
-							к вашему подъезду совершенно бесплатно!
-							Ведь мы неплохо заработаем,
-							поднимая его на ваш на этаж!</p>
-						<img src="img/bfg-9000-img.png">
-					</div>
+					<div class="services-slider">
+						<div class="slide delivery">
+							<h2>Доставка</h2>
+							<p>Мы с удовольствием доставим ваш товар прямо
+								к вашему подъезду совершенно бесплатно!
+								Ведь мы неплохо заработаем,
+								поднимая его на ваш на этаж!</p>
+							<img src="img/auto-img.png">
+						</div>
+						<div class="slide guarantee">
+							<h2>Гарантия</h2>
+							<p>Если купленный у нас товар поломается или заискрит,
+								а также в случае пожара, спровоцированного его возгаранием,
+								вы всегда можете быть уверены в нашей гарантии.
+								Мы обменяем сгоревший товар на новый.
+								Дом уж восстановите как-нибудь сами.</p>
+							<img src="img/medal-img.png">
+						</div>
+						<div class="slide credit">
+							<h2>Кредит</h2>
+							<p>Залезть в долговую яму стало проще!
+								Кредитные консультанты придут вам на помощь.</p>
+							<img src="img/credit-img.png">
+						</div>
 				</div>
 			</section>
 
@@ -237,9 +276,16 @@
 						<h1>Контакты</h1>
 						<p>Вы можете забрать товар сами,
 							заехав в наш офис:</p>
-						<img src="img/bfg-9000-img.png">
+						<div class="small-map"></div>
 						<a href="#">Заблудились? Напишите нам!</a>
 					</div>
+
+					<form action="https://echo.htmlacademy.ru" method="post">
+						<label>Ваше имя:<input type="text" name="name" value="Представьтесь пожалуйста"></label>
+						<label>Ваш e-mail:<input type="text" name="e-mail" value="Для отправки ответа"></label>
+						<label>Текст письма:<input type="text" name="message" value="В свободной форме"></label>
+						<input type="submit" value="Отправить">
+					</form>
 				</section>
 
 <!--ФУТЕР-->
