@@ -457,3 +457,43 @@ img {
   font-size: 18px;
   line-height: 24px;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.popular .list {
+  background: #f7f3ec;
+}
+
+.list h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "cuprum";
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+.list a {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  font-family: "cuprum";
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 253px;
+  min-height: 38px;
+  box-sizing: border-box;
+  background: #ee3643;
+  border-radius: 2px;
+}
