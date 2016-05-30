@@ -313,3 +313,147 @@ img {
   text-decoration: none;
   color: #ffffff;
 }
+
+/*ПРИЕМУЩЕСТВА*/
+
+.reasons {
+  font-size: 0;
+}
+
+.reason {
+
+  width: 300px;
+  float: left;
+}
+
+.reason a {
+  font-family: "cuprum";
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  display:block;
+  box-sizing: border-box;
+  width: 135px;
+  min-height: 38px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.reason h2 {
+  font-family: "Cuprum Bold";
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+.reason-img-container {
+  font-size: 13px;
+  width: 78px;
+  height: 72px;
+  outline: 1px solid black;
+}
+
+.reasons .materials {
+  background: #f6b22d;
+}
+
+
+
+.reasons .tools {
+  background: #4aafde;
+}
+
+.reasons .equimpent {
+  background: #cc79d1;
+}
+
+.reasons .discounts {
+  background: #85d179;
+}
+
+.reasons .delivery {
+  background: #f6b22d;
+}
+
+/*СЛАЙДЕР*/
+
+.slider {
+  width: 620px;
+  height: 266px;
+  box-sizing: border-box;
+
+  float:left;
+}
+
+.slide {
+  width: 620px;
+  height: 266px;
+  background: url("../img/slide-bg1.jpg");
+}
+
+.slide:nth-child(2) {
+  width: 620px;
+  height: 266px;
+  background: url("../img/slide-bg2.jpg");
+  display: none;
+}
+
+.slide a {
+  display: block;
+  width: 195px;
+  padding: 12px 0;
+  box-sizing: border-box;
+  background: #ee3643;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: "cuprum";
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.slide button {
+  font-size: 45px;
+  line-height: 18px;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide .left::before {
+  content: "\3C";
+  color: #ffffff;
+  font-family: "symbols-technomart";
+}
+
+.slide .right::before {
+  content: "\3e";
+  color: #ffffff;
+  font-family: "symbols-technomart";
+}
+
+.slider-title h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum Bold";
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.slider-title span {
+  font-family: "PT Sans";
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
