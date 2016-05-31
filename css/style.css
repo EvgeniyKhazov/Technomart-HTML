@@ -321,7 +321,7 @@ img {
 }
 
 .reason {
-
+  position: relative;
   width: 300px;
   float: left;
 }
@@ -464,6 +464,8 @@ img {
   clear: both;
 }
 
+/*ТОВАРЫ*/
+
 .popular .list {
   background: #f7f3ec;
 }
@@ -496,4 +498,79 @@ img {
   box-sizing: border-box;
   background: #ee3643;
   border-radius: 2px;
+}
+
+/*САМИ ТОВАРЫ*/
+
+.popular {
+  font-size: 0;
+}
+
+.product-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  position: relative;
+}
+
+/*НОВЫЙ ФЛАГ*/
+
+.flag-new::before {
+  position: absolute;
+  content: "";
+  background: url("../img/new-img.png") no-repeat 0 0;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.product-item h1 {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "PT Sans Bold";
+  color: #000;
+}
+
+.product-item span {
+  font-family: "PT Sans Bold";
+  font-size: 17px;
+  line-height: 18px;
+  display: block;
+
+}
+
+.product-item .discount {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.product-item .price {
+  background: #ee3643;
+  width: 140px;
+  min-height: 38px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+}
+
+.product-item .price::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 19px solid #fff;
+  border-left-color: #ee3643;
+  position: absolute;
+  top: 0;
+  right: -19px;
+}
+
+.product-item .container-img{
+  width: 218px;
+  height: 180px;
+  box-sizing: border-box;
 }
