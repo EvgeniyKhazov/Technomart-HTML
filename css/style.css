@@ -353,10 +353,15 @@ img {
 }
 
 .reason-img-container {
-  font-size: 13px;
   width: 78px;
   height: 72px;
+  line-height: 72px;
   outline: 1px solid black;
+  text-align: center;
+}
+
+.reason-img-container img{
+  vertical-align: middle;
 }
 
 .reasons .materials {
