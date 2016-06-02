@@ -520,6 +520,45 @@ img {
   position: relative;
 }
 
+.product-item .actions {
+  position: absolute;
+  background: #fff;
+}
+
+.product-item .actions {
+  display: none;
+}
+
+.product-item:hover .actions {
+  display: block;
+}
+
+.actions a {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "cuprum";
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  width: 135px;
+  min-height: 38px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 12px 0;
+}
+
+.actions .buy {
+  background: #63a63e;
+  color: #fff;
+  border-bottom: 3px solid #367315;
+  position: relative;
+}
+
+.actions .bookmark {
+  border: 3px solid #63a63e;
+  color: #32425c;
+}
+
 /*НОВЫЙ ФЛАГ*/
 
 .flag-new::before {
@@ -538,6 +577,8 @@ img {
   line-height: 20px;
   font-family: "PT Sans Bold";
   color: #000;
+  margin: 0;
+  padding: 0;
 }
 
 .product-item span {
@@ -578,4 +619,23 @@ img {
   width: 218px;
   height: 180px;
   box-sizing: border-box;
+}
+
+
+
+/*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
+
+.manufacturer-item {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #e5e5e5;
+
+}
+
+.manufacturer-item:nth-child(-n+5) {
+  padding: 47px 0 52px 0;
+}
+
+.manufacturer-item:nth-child(n+6) {
+  padding: 34px 0 36px 0;
 }
