@@ -639,3 +639,67 @@ img {
 .manufacturer-item:nth-child(n+6) {
   padding: 34px 0 36px 0;
 }
+
+/* СЕРВИСЫ */
+.services {
+  background: #f2f6f8;
+}
+
+.intro h2{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 24px;
+  font-family: "cuprum";
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.intro p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "cuprum";
+  width: 400px;
+}
+
+.services-item {
+  width: 240px;
+
+}
+
+.services-item ul {
+  margin: 0;
+  padding: 0;
+}
+
+.services-item li {
+
+  list-style: none;
+}
+
+.services-item a {
+  font-size: 21px;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  background: #32425c;
+  width: 240px;
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
+  padding: 15px 0 15px 22px;
+}
+
+.services-slider {
+
+}
+
+.services-slide {
+  width: ;
+  height: 340px;
+}
+
+.services-delivery {
+  outline: 1px solid black;
+  background: url("../img/auto-bg.png" no-repeat);
+}
