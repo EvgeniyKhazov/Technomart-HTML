@@ -960,7 +960,7 @@ input[type="radio"] {
   min-height: 158px;
   background: url("../img/small-map-bg.jpg");
   margin-top: 36px;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 .address a {
@@ -978,4 +978,132 @@ input[type="radio"] {
   padding: 12px 0;
   margin-top: 36px;
   border-radius: 3px;
+}
+
+/*ФОРМА*/
+
+form {
+  width: 620px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.form-question {
+  width: 620px;
+  border-top: 7px solid #ee3643;
+  padding: 26px 80px;
+  box-sizing: border-box;
+}
+
+.form-question label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "cuprum";
+  padding-top: 22px;
+  box-sizing: border-box;
+}
+
+.form-question input[type="text"] {
+  display: block;
+  width: 220px;
+  height: 34px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  margin-top: 13px;
+  font-size: 13px;
+  color: #999;
+  padding: 0 0 0 14px;
+  box-sizing: border-box;
+}
+
+.form-question input[name="name"] {
+  margin-right: 20px;
+}
+
+.form-question textarea[name="message"] {
+  width: 460px;
+  min-height: 114px;
+  vertical-align: top;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  display: block;
+  margin-top: 13px;
+  font-size: 13px;
+  color: #999;
+  padding: 0 0 0 14px;
+  box-sizing: border-box;
+  resize: none;
+
+}
+
+.button-container {
+  background: #f1f1f1;
+  padding: 37px 0;
+}
+
+.button-container input[type="submit"]{
+  display: block;
+  width: 460px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  margin: auto;
+  font-size: 14px;
+  font-family: "cuprum";
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  background: #ee3643;
+
+}
+
+/*ПОДВАЛ*/
+
+.blue {
+  background: #32425c;
+  margin: 0;
+  font-size: 0;
+}
+
+.footer-logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  border-bottom: 5px solid #b52933;
+  padding: 21px 0;
+  text-align: center;
+  background: #ee3643;
+}
+
+.footer-logo a{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "cuprum";
+}
+
+.footer-menu-company {
+  display: inline-block;
+  vertical-align: top;
+  outline: 1px solid yellow;
+
+}
+
+.footer-menu-company li {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 
+}
+
+.footer-menu-company a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+  font-family: "cuprum";
+  text-decoration: none;
 }
