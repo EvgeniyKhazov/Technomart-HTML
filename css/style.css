@@ -672,7 +672,7 @@ img {
   right: -19px;
 }
 
-.product-item .container-img{
+.product-item .container-img {
   width: 218px;
   height: 180px;
   box-sizing: border-box;
@@ -702,12 +702,9 @@ img {
   background: #f2f6f8;
   font-size: 0;
   outline: 2px solid red;
-
-
 }
 
 .intro {
-
   padding: 68px 0 0;
   outline: 1px solid yellow;
 }
@@ -1071,14 +1068,22 @@ form {
 .footer-logo {
   display: inline-block;
   vertical-align: top;
-  width: 220px;
-  border-bottom: 5px solid #b52933;
-  padding: 21px 0;
-  text-align: center;
-  background: #ee3643;
+  width: 390px;
+
+
+  text-align: left;
+
 }
 
 .footer-logo a{
+  text-align: center;;
+  padding: 21px 0;
+  border-bottom: 5px solid #b52933;
+  display: inline-block;
+  vertical-align: top;
+  background: #ee3643;
+  width: 220px;
+  box-sizing: border-box;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1094,10 +1099,19 @@ form {
 
 }
 
+.footer-menu-company ul {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-menu-company li {
   display: inline-block;
   vertical-align: top;
-  min-height: 
+  padding: 38px 0 0 0;
+  outline: 1px solid red;
+  width: 110px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .footer-menu-company a {
@@ -1106,4 +1120,125 @@ form {
   color: #f1f5f7;
   font-family: "cuprum";
   text-decoration: none;
+}
+
+.footer-contacts {
+  width: 400px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.footer-contacts p {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "cuprum";
+  color: #f1f5f7;
+  padding: 0;
+  margin: 0;
+  padding: 28px 75px 50px 0;
+  outline: 1px solid red;
+
+}
+
+
+.footer-menu-materials {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-menu-materials ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu-materials li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 135px;
+  text-align: center;
+  outline: 1px solid yellow;
+  padding-top: 30px;
+
+}
+
+.footer-menu-materials a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+  font-family: "cuprum";
+  text-decoration: none;
+}
+
+.rights {
+  display: inline-block;
+  vertical-align: top;
+  width: 390px;
+  box-sizing: border-box;
+}
+
+.rights p {
+  margin: 0;
+  padding: 38px 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "cuprum";
+  color: #fff;
+}
+
+.social {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 36px;
+  width: 250px;
+  box-sizing: border-box;
+}
+
+.social a {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #212a3a;
+  margin-right: 5px;
+}
+
+.social .social-vk::after {
+  content: "\76";
+  font-family: "symbols-technomart";
+  font-size: 18px;
+  line-height: 24px;
+  left: 50%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: -9px;
+  position: absolute;
+}
+
+.social .social-fb::after {
+  content: "\66";
+  font-family: "symbols-technomart";
+  font-size: 18px;
+  line-height: 24px;
+  left: 50%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: -6px;
+  position: absolute;
+}
+
+.social .social-in::after {
+  content: "📷";
+  font-family: "symbols-technomart";
+  font-size: 18px;
+  line-height: 24px;
+  left: 50%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: -7px;
+  position: absolute;
 }
