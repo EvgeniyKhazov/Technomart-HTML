@@ -234,7 +234,6 @@ img {
   vertical-align: top;
   box-sizing: border-box;
   width: 300px;
-  outline: 1px solid black;
   padding: 50px 0 40px 0;
 
 }
@@ -242,6 +241,14 @@ img {
 .contact:nth-child(2) {
   margin: 0 20px;
   padding: 48px 0 39px 0;
+}
+
+.contact:nth-child(3) {
+  padding: 46px 0 39px 18px;
+}
+
+.catalog-header .contact:nth-child(3) {
+  padding: 46px 0 39px 0;
 }
 
 .contact p {
@@ -303,7 +310,7 @@ img {
   text-decoration: none;
   display: inline-block;
   vertical-align: top;
-  text-align: center;
+
 }
 
 .contact .login {
@@ -311,13 +318,15 @@ img {
   min-height: 45px;
   box-sizing: border-box;
   background: #ffffff;
-  padding: 18px;
+  padding: 14px 0 14px 14px;
+  margin-right: 10px;
 }
 
 .contact .login::before {
   content:"\2386";
   font-family: "symbols-technomart";
   color: #c5c5c5;
+  margin-right: 14px;
 }
 
 .contact .registration {
@@ -325,30 +334,114 @@ img {
   min-height: 45px;
   box-sizing: border-box;
   background: #ffffff;
-  padding: 18px;
+  padding: 14px 0 14px 25px;
+}
+
+.catalog-header .user {
+  display: block;
+  padding: 14px 0 13px 47px;
+  margin: 0;
+  width: 300px;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 21px;
+  line-height: 18px;
+  color: #000;
+  position: relative;
+
+}
+
+.catalog-header .user::before {
+  content: "\1f468";
+  font-family: "symbols-technomart";
+  color: #c5c5c5;
+  font-size: 18px;
+  line-height: 18px;
+  position: absolute;
+  left: 14px;
+  top: 13px;
+}
+
+.catalog-header .user::after {
+  content: "\241b";
+  font-family: "symbols-technomart";
+  color: #c5c5c5;
+  font-size: 22px;
+  line-height: 18px;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+
+.user-menu {
+  margin: 0;
+  padding: 8px 0 9px 18px;
+  position: relative;
+}
+
+.user-menu li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 32px;
+
+}
+
+.user-menu li:nth-child(2) {
+  width: 4px;
+  height: 4px;
+  background: #32425c;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 107px;
+}
+
+.user-menu a {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "cuprum";
+  color: #32425c;
+  text-decoration: underline;
+}
+
+
+
+.main-navigation-container {
+  margin: 0;
+  padding: 0;
+  background: #32425c;
+  border-bottom: 5px solid #293449;
+  padding: 19px 54px 10px 51px;
+  text-align: left;
 }
 
 .main-navigation {
-  background: #32425c;
-  border-bottom: 5px solid #293449;
-  padding: 0 0;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
-  width: 123px;
+  box-sizing: border-box;
+  margin-right: 61px;
+}
 
+.main-navigation li:last-child {
+  margin-right: 0;
 }
 
 .main-navigation a {
   font-size: 17px;
   line-height: 17px;
-  font-style: "cuprum";
+  font-family: "cuprum";
   text-decoration: none;
   color: #ffffff;
 }
+
+
 
 /*ПРИЕМУЩЕСТВА*/
 
