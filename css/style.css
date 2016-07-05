@@ -708,6 +708,7 @@ img {
   border: 1px solid #e5e5e5;
   text-align: center;
   position: relative;
+  padding: 38px 0 0 0;
 }
 
 .product-item .actions {
@@ -746,10 +747,12 @@ img {
   position: relative;
 }
 
-.actions .buy::before {
-  content: "\62";
-  font-family: "symbols-technomart";
-  
+.actions i {
+  position: absolute;
+  left: 12px;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.3);
+
 }
 
 .actions .bookmark {
