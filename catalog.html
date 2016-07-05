@@ -95,41 +95,47 @@
           		<div class="toggle toggle-max"></div>
         		</div>
         		<div class="price-controls">
-          		<label class="min-price">от<input name="min-price" type="text" value="0"></label>
-          		<label class="max-price">до<input name="max-price" type="text" value="30000"></label>
+          		<label class="min-price"><input name="min-price" type="text" value="0"></label>
+							<span>&ndash;</span>
+          		<label class="max-price"><input name="max-price" type="text" value="30000"></label>
         		</div>
       		</div>
 
 					<div class="manufacturer">
-						<h2>Производители</h2>
-						<label><input name="Bosh" type="checkbox" checked>Bosh</label>
-						<label><input name="Interskol" type="checkbox">Интерскол</label>
-						<label><input name="Makita" type="checkbox" checked>Makita</label>
-						<label><input name="Dewalt" type="checkbox">Dewalt</label>
-						<label><input name="Hitachi" type="checkbox">Hitachi</label>
+						<h2>Производители:</h2>
+						<input id="m1" name="Bosch" type="checkbox" checked>
+						<label for="m1">Bosch</label>
+						<input id="m2" name="Interskol" type="checkbox">
+						<label for="m2">Интерскол</label>
+						<input id="m3" name="Makita" type="checkbox" checked>
+						<label for="m3">Makita</label>
+						<input id="m4" name="Dewalt" type="checkbox">
+						<label for="m4">Dewalt</label>
+						<input id="m5" name="Hitachi" type="checkbox">
+						<label for="m5">Hitachi</label>
 					</div>
 
 					<div class="power">
-						<h2>Питание</h2>
-						<label><input name="power-button" type="radio" value="battery" checked>Аккумуляторные</label>
-						<label><input name="power-button" type="radio" value="electric">Сетевые</label>
+						<h2>Питание:</h2>
+						<input id="p1" name="power-button" type="radio" value="battery" checked><label for="p1">Аккумуляторные</label>
+						<input id="p2" name="power-button" type="radio" value="electric"><label for="p2">Сетевые</label>
 					</div>
 
 					<input type="submit" value="Показать">
 				</form>
-			</section>
+			</section><!--
 
-<!--ВЫБОР ТОВАРОВ-->
+ВЫБОР ТОВАРОВ
 
-			<section class="product">
+			--><section class="product">
 				<div class="sorting">
 					<h2>Сортировка</h2>
 					<ul>
-						<li><a href="#">По цене</a></li>
+						<li><a href="#" class="active">По цене</a></li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По функционалу</a></li>
 					</ul>
-					<div class="arrow"><i></i><i></i></div>
+					<div class="arrow"><span class="active"></span><span></span></div>
 				</div>
 
 				<article class="product-item">
@@ -138,7 +144,7 @@
 						<a href="#" class="bookmark">В закладки</a>
 					</div>
 					<div class="container-img">
-						<img src="img/bfg-3000-img.png" width="127" height="112" alt="bosch bfg-3000">
+						<img src="img/bfg-3000-2000-img.jpg" width="218" height="91" alt="bosch bfg-3000">
 					</div>
 					<h2>Перфоратор BOSCH BFG-3000</h2>
 					<span class="discount">22500 Р.</span>
@@ -151,7 +157,7 @@
 						<a href="#" class="bookmark">В закладки</a>
 					</div>
 					<div class="container-img">
-						<img src="img/bfg-6000-img.png" width="144" height="128" alt="bosch bfg-6000">
+						<img src="img/bfg-6000-img.jpg" width="218" height="91" alt="bosch bfg-6000">
 					</div>
 					<h2>Перфоратор BOSCH BFG-6000</h2>
 					<span class="discount">30500 Р.</span>
@@ -164,7 +170,7 @@
 						<a href="#" class="bookmark">В закладки</a>
 					</div>
 					<div class="container-img">
-						<img src="img/bfg-2000-img.png" width="127" height="112" alt="bosch bfg-2000">
+						<img src="img/bfg-3000-2000-img.jpg" width="218" height="91" alt="bosch bfg-2000">
 					</div>
 					<h2>Перфоратор BOSCH BFG-2000</h2>
 					<span class="price">12500 Р.</span>
@@ -176,7 +182,7 @@
 						<a href="#" class="bookmark">В закладки</a>
 					</div>
 					<div class="container-img">
-						<img src="img/bfg-3000-img.png" width="127" height="112" alt="bosch bfg-3000">
+						<img src="img/bfg-3000-2000-img.jpg" width="218" height="91" alt="bosch bfg-3000">
 					</div>
 					<h2>Перфоратор BOSCH BFG-3000</h2>
 					<span class="discount">22500 Р.</span>
@@ -189,7 +195,7 @@
 						<a href="#" class="bookmark">В закладки</a>
 					</div>
 					<div class="container-img">
-						<img src="img/bfg-6000-img.png" width="144" height="128" alt="bosch bfg-6000">
+						<img src="img/bfg-6000-img.jpg" width="218" height="91" alt="bosch bfg-6000">
 					</div>
 					<h2>Перфоратор BOSCH BFG-6000</h2>
 					<span class="discount">30500 Р.</span>
@@ -202,7 +208,7 @@
 						<a href="#" class="bookmark">В закладки</a>
 					</div>
 					<div class="container-img">
-						<img src="img/bfg-2000-img.png" width="127" height="112" alt="bosch bfg-2000">
+						<img src="img/bfg-3000-2000-img.jpg" width="218" height="91" alt="bosch bfg-2000">
 					</div>
 					<h2>Перфоратор BOSCH BFG-2000</h2>
 					<span class="price">12500 Р.</span>
@@ -214,7 +220,7 @@
 						<a href="#" class="bookmark">В закладки</a>
 					</div>
 					<div class="container-img">
-						<img src="img/bfg-3000-img.png" width="127" height="112" alt="bosch bfg-3000">
+						<img src="img/bfg-3000-2000-img.jpg" width="218" height="91" alt="bosch bfg-3000">
 					</div>
 					<h2>Перфоратор BOSCH BFG-3000</h2>
 					<span class="discount">22500 Р.</span>
@@ -227,7 +233,7 @@
 						<a href="#" class="bookmark">В закладки</a>
 					</div>
 					<div class="container-img">
-						<img src="img/bfg-6000-img.png" width="144" height="128" alt="bosch bfg-6000">
+						<img src="img/bfg-6000-img.jpg" width="218" height="91" alt="bosch bfg-6000">
 					</div>
 					<h2>Перфоратор BOSCH BFG-6000</h2>
 					<span class="discount">30500 Р.</span>
@@ -240,7 +246,7 @@
 						<a href="#" class="bookmark">В закладки</a>
 					</div>
 					<div class="container-img">
-						<img src="img/bfg-2000-img.png" width="127" height="112" alt="bosch bfg-2000">
+						<img src="img/bfg-3000-2000-img.jpg" width="218" height="91" alt="bosch bfg-2000">
 					</div>
 					<h2>Перфоратор BOSCH BFG-2000</h2>
 					<span class="price">12500 Р.</span>

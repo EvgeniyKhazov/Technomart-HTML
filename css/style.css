@@ -737,11 +737,18 @@ img {
   padding: 12px 0;
 }
 
+
+
 .actions .buy {
   background: #63a63e;
   color: #fff;
   border-bottom: 3px solid #367315;
   position: relative;
+}
+
+.actions .buy::before {
+  content: "\62";
+  font-family: "symbols-technomart";
 }
 
 .actions .bookmark {
@@ -865,9 +872,10 @@ img {
   position: relative;
 }
 
-.slider input[type="radio"] {
+.slider-container input[type="radio"] {
   position: absolute;
   opacity: 0;
+  display: none;
 }
 
 .services-toggle {
@@ -1512,9 +1520,11 @@ img {
 
 .filter-block {
   width: 220px;
+  margin-right: 20px;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
+  outline: 1px solid red;
 }
 
 .name {
@@ -1541,8 +1551,17 @@ img {
 
 /*РЭЙНДЖ*/
 
+.filter-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .range-filter {
   width: 220px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+
+
 
 }
 
@@ -1550,6 +1569,7 @@ img {
   background: #f7f3ec;
   padding: 39px 20px;
   position: relative;
+  margin-bottom: 9px;
 }
 
 .scale {
@@ -1581,4 +1601,239 @@ img {
 
 .toggle-min {
   left: 20px;
+}
+
+.price-controls {
+  font-size: 0;
+  text-align: center;
+
+}
+
+.price-controls label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 43.18%;
+  font-size: 17px;
+  line-height: 18px;
+
+
+
+}
+
+.price-controls  input{
+  width: 100%;
+  border: none;
+  text-align: center;
+  background: #f7f3ec;
+  border-radius: 3px;
+  outline: none;
+  padding: 10px 0;
+}
+
+.price-controls span {
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block;
+  vertical-align:  middle;
+  width: 13.64%;
+  color: #444;
+}
+
+.manufacturer {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.manufacturer h2 {
+  padding: 0;
+  padding: 16px 0 14px;
+}
+
+.manufacturer input[type="checkbox"] {
+  display: none;
+}
+
+.manufacturer input[type="checkbox"] + label {
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 34px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.manufacturer input[type="checkbox"] + label::before {
+  content: "\2610";
+  font-family: "symbols-technomart";
+  position: absolute;
+  font-size: 28px;
+  left: -34px;
+  top: 0;
+  color: #c1c1c1;
+}
+
+.manufacturer input[type="checkbox"]:checked + label::before {
+  content: "\2611";
+}
+
+.power {
+  padding-bottom: 59px;
+}
+
+.power h2 {
+  padding: 0;
+  font-size: 17px;
+  line-height: 30px;
+  padding: 17px 0 13px;
+}
+
+.power input[type="radio"] {
+  display: none;
+}
+
+.power input[type="radio"] + label {
+  display: block;
+  margin-left: 33px;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.power input[type="radio"] + label::before {
+  content: "\25cb";
+  font-family: "symbols-technomart";
+  position: absolute;
+  font-size: 28px;
+  color: #c1c1c1;
+  left: -33px;
+}
+
+.power input[type="radio"]:checked + label::before {
+  content: "\25cf";
+}
+
+.selection-form input[type="submit"] {
+  width: 140px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  text-transform: uppercase;
+  padding: 0;
+  padding: 9px 0;
+  font-size: 13px;
+  line-height: 18px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/*СОРТИРОВКА*/
+
+.product {
+  display: inline-block;
+  vertical-align: top;
+  outline: 1px solid red;
+  width: 700px;
+  font-size: 0;
+
+}
+
+.sorting {
+  font-size: 0;
+  padding: 11px 0 4px;
+  background: #f7f3ec;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+
+}
+
+.sorting h2 {
+  padding: 0;
+  line-height: 18px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+
+  text-transform: uppercase;
+  width: 240px;
+  box-sizing: border-box;
+  padding: 0 0 0 18px;
+
+
+}
+
+.sorting ul {
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+  display: inline-block;
+  vertical-align: top;
+
+
+}
+
+.sorting li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 120px;
+
+
+}
+
+.sorting .active {
+  border: none;
+  color: #ee3643;
+
+
+}
+
+.sorting a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+  line-height: 18px;
+
+
+
+}
+
+.arrow {
+  position: relative;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.arrow span:first-child::before {
+  content: "\25b2";
+  font-family: "symbols-technomart";
+  font-size: 23px;
+  margin-right: 21px;
+  position: absolute;
+  top: -2px;
+
+}
+
+.arrow span:last-child::before {
+  content: "\25bc";
+  font-family: "symbols-technomart";
+  font-size: 23px;
+  color: #c6c2bd;
+  position: absolute;
+  left: 32px;
+  top: -2px;
+
 }
