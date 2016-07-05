@@ -749,6 +749,7 @@ img {
 .actions .buy::before {
   content: "\62";
   font-family: "symbols-technomart";
+  
 }
 
 .actions .bookmark {
