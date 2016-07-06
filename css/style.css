@@ -705,10 +705,17 @@ img {
   display: inline-block;
   vertical-align: top;
   width: 220px;
+  box-sizing: border-box;
   border: 1px solid #e5e5e5;
   text-align: center;
   position: relative;
   padding: 38px 0 0 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.product-item:nth-child(5) {
+  margin-right: 0;
 }
 
 .product-item .actions {
@@ -773,7 +780,7 @@ img {
   z-index: 10;
 }
 
-.product-item h1 {
+.product-item h2 {
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans Bold";
