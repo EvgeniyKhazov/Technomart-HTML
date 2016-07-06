@@ -704,8 +704,7 @@ img {
 .product-item {
   display: inline-block;
   vertical-align: top;
-  width: 220px;
-  box-sizing: border-box;
+  width: 218px;
   border: 1px solid #e5e5e5;
   text-align: center;
   position: relative;
@@ -714,13 +713,20 @@ img {
   margin-bottom: 20px;
 }
 
-.product-item:nth-child(5) {
+.popular .product-item:nth-child(5) {
   margin-right: 0;
+}
+
+.product .product-item:nth-child(3n+4) {
+  margin-right: 0;
+
 }
 
 .product-item .actions {
   position: absolute;
+  top: 39px;
   background: #fff;
+  padding-top: 4px;
 }
 
 .product-item .actions {
@@ -739,10 +745,11 @@ img {
   text-decoration: none;
   display: inline-block;
   width: 135px;
-  min-height: 38px;
+
   box-sizing: border-box;
-  border-radius: 2px;
-  padding: 12px 0;
+  border-radius: 3px;
+  padding: 10px 0 6px;
+  margin-bottom: 8px;
 }
 
 
@@ -756,7 +763,7 @@ img {
 
 .actions i {
   position: absolute;
-  left: 12px;
+  left: 8px;
   font-size: 17px;
   color: rgba(255, 255, 255, 0.3);
 
@@ -765,6 +772,7 @@ img {
 .actions .bookmark {
   border: 3px solid #63a63e;
   color: #32425c;
+  padding: 9px 0 5px;
 }
 
 /*НОВЫЙ ФЛАГ*/
@@ -787,6 +795,8 @@ img {
   color: #000;
   margin: 0;
   padding: 0;
+  font-weight: normal;
+
 }
 
 .product-item span {
@@ -795,21 +805,31 @@ img {
   line-height: 18px;
   display: block;
 
+
 }
 
 .product-item .discount {
   color: #999;
   text-decoration: line-through;
+  padding: 12px 0 9px;
+}
+
+.no-discount {
+  visibility: hidden;
 }
 
 .product-item .price {
   background: #ee3643;
   width: 140px;
-  min-height: 38px;
+  height: 38px;
   margin: 0 auto;
   box-sizing: border-box;
   color: #fff;
   position: relative;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .product-item .price::after {
@@ -825,10 +845,10 @@ img {
 
 .product-item .container-img {
   width: 218px;
-  height: 180px;
+  height: 91px;
   box-sizing: border-box;
+  margin-bottom: 50px;
 }
-
 
 
 /*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
@@ -1221,15 +1241,13 @@ img {
   display: inline-block;
   vertical-align: top;
   width: 390px;
-
-
   text-align: left;
 
 }
 
 .footer-logo a{
   text-align: center;;
-  padding: 21px 0;
+  padding: 18px 0 16px;
   border-bottom: 5px solid #b52933;
   display: inline-block;
   vertical-align: top;
@@ -1248,12 +1266,14 @@ img {
   display: inline-block;
   vertical-align: top;
   outline: 1px solid yellow;
+  width: 550px;
 
 }
 
 .footer-menu-company ul {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .footer-menu-company li {
@@ -1261,9 +1281,9 @@ img {
   vertical-align: top;
   padding: 38px 0 0 0;
   outline: 1px solid red;
-  width: 110px;
+  width: 20%;
   box-sizing: border-box;
-  text-align: center;
+
 }
 
 .footer-menu-company a {
@@ -1847,4 +1867,73 @@ img {
   left: 32px;
   top: -2px;
 
+}
+
+/*ПАГИНАТОР*/
+
+.paginator {
+  padding: 32px 0 60px;
+}
+
+.paginator ul {
+  margin: 0;
+  padding: 0;
+}
+
+.paginator li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 38px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  margin-right: 10px;
+
+}
+
+.paginator li:last-child {
+  width: 138px;
+
+}
+
+.paginator a {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 18px;
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 9px 0;
+
+
+}
+
+.paginator .active {
+  background: #ee3643;
+  border: 1px solid #ee3643;
+  color: #fff;
+}
+
+/*О ПЕРФОРАТОРАХ*/
+
+.info {
+  background: #f2f6f8;
+}
+
+.info h2 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "cuprum";
+  font-weight: normal;
+  padding-top: 68px;
+}
+
+.info p {
+  margin: 0;
+  padding: 0;
+  padding: 30px 0 67px;
 }
