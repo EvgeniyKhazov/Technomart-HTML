@@ -721,7 +721,18 @@ img {
 
 .popular .list {
   background: #f7f3ec;
+  margin-bottom: 20px;
 }
+
+.products .list {
+  padding: 25px 0 25px 27px;
+}
+
+.manufacturers .list {
+  padding: 26px 0 25px 24px;
+}
+
+
 
 .list h2 {
   font-size: 30px;
@@ -734,6 +745,17 @@ img {
   vertical-align: top;
   margin: 0;
   padding: 0;
+
+}
+
+.products h2 {
+  padding: 4px 0;
+  margin-right: 372px;
+}
+
+.manufacturers h2 {
+  padding: 4px 0;
+  margin-right: 272px;
 }
 
 .list a {
@@ -747,7 +769,7 @@ img {
   display: inline-block;
   vertical-align: top;
   width: 253px;
-  min-height: 38px;
+  padding: 10px 0 10px;
   box-sizing: border-box;
   background: #ee3643;
   border-radius: 2px;
@@ -915,15 +937,21 @@ img {
   display: inline-block;
   vertical-align: top;
   border: 1px solid #e5e5e5;
-
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .manufacturer-item:nth-child(-n+5) {
-  padding: 47px 0 52px 0;
+  padding: 47px 0 42px 0;
 }
 
 .manufacturer-item:nth-child(n+6) {
-  padding: 34px 0 36px 0;
+  padding: 33px 0 23px 0;
+  margin-bottom: 85px;
+}
+
+.manufacturer-item:nth-child(4n+1) {
+  margin-right: 0;
 }
 
 /* СЕРВИСЫ */
