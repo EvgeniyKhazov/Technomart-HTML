@@ -958,12 +958,10 @@ img {
 .services {
   background: #f2f6f8;
   font-size: 0;
-  outline: 2px solid red;
 }
 
 .intro {
   padding: 68px 0 0;
-  outline: 1px solid yellow;
 }
 
 .intro h2{
@@ -1002,7 +1000,7 @@ img {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  outline: 3px solid red;
+
   padding: 70px 0 0;
 }
 
@@ -1021,7 +1019,7 @@ img {
   width: 240px;
   border-bottom: 1px solid #293449;
   border-top: 1px solid #405069;
-  padding: 15px 0 15px 22px;
+  padding: 13px 0 16px 22px;
   box-sizing: border-box;
 }
 
@@ -1032,19 +1030,31 @@ img {
   vertical-align: top;
   position: relative;
   width: 700px;
+  height: 354px;
+
+}
+
+.services-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background: url("../img/shadow.png") 0 25px no-repeat;
+
+  width: 10px;
   height: 340px;
-  outline: 4px solid green;
 }
 
 .services-slide {
   width: 700px;
-  height: 340px;
+  height: 354px;
   font-size: 13px;
   line-height: 24px;
   font-family: "pt sans";
   position: absolute;
-  padding: 70px 0 0 80px;
+  padding: 72px 0 0 80px;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 .services-slide {
@@ -1052,41 +1062,45 @@ img {
 }
 
 .services-slide h2 {
-  margin: 0 0 30px 0;
+  margin: 0 0 32px 0;
   padding: 0;
   font-size: 36px;
   font-family: "cuprum";
   font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
+  outline: 1px solid green;
+}
+
+.services-slide p {
+  outline: 1px solid yellow;
 }
 
 .services-delivery {
-  outline: 1px solid black;
+
   background: url("../img/auto-bg.png") 100% 100% no-repeat;
 
 }
 
 .services-guarantee {
-  outline: 1px solid black;
   background: url("../img/medal-bg.png") 100% 100% no-repeat;
 
 }
 
 .services-credit {
-  outline: 1px solid black;
   background: url("../img/credit-bg.png") 100% 100% no-repeat;
 
 }
 
 .services-credit p {
   margin-bottom: 30px;
+
 }
 
 .services-credit a {
   display: block;
   width: 195px;
-  height: 38px;
+  min-height: 38px;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 18px;
@@ -1104,7 +1118,7 @@ img {
 #btn2:checked ~ .services-toggle label[for="btn2"],
 #btn3:checked ~ .services-toggle label[for="btn3"] {
   background: #fff;
-  color: #000;
+  color: #32425c;
   border: none;
 }
 
