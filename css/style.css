@@ -1152,7 +1152,7 @@ img {
   height: 446px;
   background: url("../img/big-map-bg.jpg");
   position: absolute;
-  top: 0;
+  top: -57px;
   left: 0;
 }
 
