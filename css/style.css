@@ -125,9 +125,12 @@ img {
   margin: 0 auto;
 }
 
-.dark-blue a {
+.dark-blue .enter-menu {
   display: inline-block;
   vertical-align: top;
+}
+
+.dark-blue a{
   font-family: "cuprum";
   text-decoration: none;
 
@@ -162,10 +165,10 @@ img {
   padding: 12px 0 0 18px;
 }
 
-.search::before {
+.search a::before {
   content: "\1f50d";
   font-family: "symbols-technomart";
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   margin-right: 14px;
 
 }
@@ -180,10 +183,10 @@ img {
   padding: 12px 0 0 0;
 }
 
-.bookmarks::before {
+.bookmarks a::before {
   content: "\1f516";
   font-family: "symbols-technomart";
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -201,15 +204,16 @@ img {
   padding: 12px 0 0 16px;
 }
 
-.basket::before {
+.basket a::before {
   content: "\62";
   font-family: "symbols-technomart";
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   margin-right: 16px;
 
 }
 
 .order {
+
   font-size: 17px;
   line-height: 18px;
   padding: 12px 22px 12px 20px;
@@ -1154,6 +1158,18 @@ img {
   position: absolute;
   top: -57px;
   left: 0;
+  box-shadow: 0 0 16px rgba(35, 31, 32, 0.5);
+
+}
+
+.large-map::before {
+  content: "";
+  background: url("../img/close-bg.png");
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  right: 9px;
+  top: 8px;
 }
 
 .company {
@@ -1278,7 +1294,8 @@ img {
 .mail-form {
   width: 620px;
   box-sizing: border-box;
-  display: none;
+  display: block;
+  position: absolute;
 }
 
 .form-question {
