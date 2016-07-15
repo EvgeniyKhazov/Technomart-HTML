@@ -1187,7 +1187,6 @@ img {
   padding: 0;
   font-size: 30px;
   font-family: "cuprum";
-  color: 0;
   text-transform: uppercase;
   font-weight: normal;
   margin-bottom: 30px;
@@ -1260,7 +1259,6 @@ img {
   padding: 0;
   font-size: 30px;
   font-family: "cuprum";
-  color: 0;
   text-transform: uppercase;
   font-weight: normal;
   margin-bottom: 30px;
@@ -1300,12 +1298,23 @@ img {
   top: 125px;
   left: 50%;
   margin-left: -310px;
+  display: none;
+}
+
+.mail-form::before {
+  content: "";
+  position: absolute;
+  background: url("../img/close-bg.png");
+  width: 21px;
+  height: 21px;
+  top: 16px;
+  right: 10px;
 }
 
 .form-question {
   width: 620px;
   border-top: 7px solid #ee3643;
-  padding: 24px 80px;
+  padding: 24px 80px 37px;
   box-sizing: border-box;
   background: #fff;
 }
@@ -1323,11 +1332,12 @@ img {
 .form-question input[type="text"] {
   display: block;
   width: 220px;
-  height: 34px;
+  height: 38px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
   margin-top: 10px;
   font-size: 13px;
+  font-family: "pt sans";
   color: #999;
   padding: 0 0 0 14px;
   box-sizing: border-box;
@@ -1344,10 +1354,11 @@ img {
   border: 2px solid #d7dcde;
   border-radius: 3px;
   display: block;
-  margin-top: 13px;
+  margin-top: 8px;
+  font-family: "pt sans";
   font-size: 13px;
   color: #999;
-  padding: 0 0 0 14px;
+  padding: 8px 0 0 14px;
   box-sizing: border-box;
   resize: none;
 
@@ -1363,15 +1374,18 @@ img {
   width: 460px;
   box-sizing: border-box;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   margin: auto;
   font-size: 14px;
   font-family: "cuprum";
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  padding: 12px;
+  padding: 0;
+  padding: 10px;
+  line-height: 18px;
   background: #ee3643;
+  cursor: pointer;
 
 }
 
