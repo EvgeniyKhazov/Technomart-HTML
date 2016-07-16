@@ -146,41 +146,96 @@ img {
   position: relative;
 }
 
+.logo:hover {
+  background: #ca2c37;
+}
+
+.logo:active {
+  background: #ba2732;
+}
+
 .logo::after {
   content: "";
   position: absolute;
-  width: 220px;
+  width: 219px;
   height: 5px;
   background: #b52933;
   left: 0;
   bottom: -5px;
 }
 
- .search {
-  font-size: 17px;
-  line-height: 18px;
-  width: 288px;
-  box-sizing: border-box;
-
-  padding: 12px 0 0 18px;
+.logo:hover::after {
+  background: #9a212a;
 }
 
-.search a::before {
-  content: "\1f50d";
-  font-family: "symbols-technomart";
-  color: rgba(255, 255, 255, 0.3);
-  margin-right: 14px;
+.logo:active::after {
+  background: #9a212a;
+}
 
+ .search {
+  position: relative;
+  width: 270px;
+  box-sizing: border-box;
+}
+
+
+
+.search input {
+  width: 270px;
+  height: 43px;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  display: block;
+  padding-left: 48px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "cuprum";
+  color: #fff;
+}
+
+.search .icon-search {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 17px;
+  position: absolute;
+  top: 9px;
+  left: 14px;
+}
+
+.search input:focus {
+  outline: none;
+  background: #fff;
+  color: #000;
+
+}
+
+.search input:focus + .icon-search {
+  color: #ee3643;
+}
+
+
+
+.search:hover {
+  background: #212a3a;
+}
+
+.search:hover .icon-search {
+  color: rgba(255, 255, 255, 1);
 }
 
 .bookmarks {
   font-size: 17px;
   line-height: 18px;
-  width: 132px;
+  width: 150px;
   box-sizing: border-box;
   vertical-align: middle;
+  padding: 12px 0 12px 44px;
+  position: relative;
+}
 
-  padding: 12px 0 0 0;
+.bookmarks:hover {
+  background: #212a3a;
 }
 
 .bookmarks a::before {
@@ -190,9 +245,27 @@ img {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  margin-right: 14px;
 
+  position: absolute;
+  top: 13px;
+  left: 18px;
+}
 
+.bookmarks:hover a::before{
+  color: rgba(255, 255, 255, 1);
+}
+
+.bookmarks:active {
+  background: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bookmarks:active a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bookmarks:active a::before{
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .basket {
@@ -200,16 +273,38 @@ img {
   line-height: 18px;
   width: 150px;
   box-sizing: border-box;
+  padding: 12px 0 12px 49px;
+  position: relative;
+}
 
-  padding: 12px 0 0 16px;
+.basket:hover {
+  background: #212a3a;
 }
 
 .basket a::before {
   content: "\62";
   font-family: "symbols-technomart";
   color: rgba(255, 255, 255, 0.3);
-  margin-right: 16px;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+}
 
+.basket:hover a::before {
+  color: rgba(255, 255, 255, 1);
+}
+
+.basket:active {
+  background: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.basket:active a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.basket:active a::before {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .order {
@@ -221,9 +316,21 @@ img {
 
 }
 
+.order:hover {
+  background: #5fbb2d;
+}
+
+.order:active {
+  background: #518534;
+}
+
+.order:active a {
+  color: rgb(255, 255, 255, 0.5);
+}
+
 .catalog-header .basket {
   background: #ee3643;
-  padding: 12px 0 12px 16px;
+
 }
 
 /*ХЭДЭР ВХОД*/
@@ -419,8 +526,6 @@ img {
   margin: 0;
   padding: 0;
   background: #32425c;
-  border-bottom: 5px solid #293449;
-  padding: 19px 54px 10px 51px;
   text-align: left;
 }
 
@@ -432,12 +537,30 @@ img {
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
-  box-sizing: border-box;
-  margin-right: 61px;
+
+
+}
+
+.main-navigation li:first-child a{
+  padding-left: 52px;
+}
+
+.main-navigation li:last-child a{
+  padding-right: 54px;
 }
 
 .main-navigation li:last-child {
   margin-right: 0;
+}
+
+.main-navigation a:hover {
+  background: #293449;
+}
+
+.main-navigation a:active {
+  background: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 5px solid #1d2739;
 }
 
 .main-navigation a {
@@ -446,6 +569,9 @@ img {
   font-family: "cuprum";
   text-decoration: none;
   color: #ffffff;
+  display: block;
+  padding: 19px 30px 19px 31px;
+  border-bottom: 5px solid #293449;
 }
 
 
