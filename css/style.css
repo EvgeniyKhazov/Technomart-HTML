@@ -435,11 +435,27 @@ img {
   margin-right: 10px;
 }
 
+.contact a:hover {
+  color: #ee3643;
+}
+
+.contact a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .contact .login::before {
   content:"\2386";
   font-family: "symbols-technomart";
   color: #c5c5c5;
   margin-right: 14px;
+}
+
+.contact .login:hover::before {
+  color: #32425b;
+}
+
+.contact .login:active::before {
+  color: #c5c5c5;
 }
 
 .contact .registration {
@@ -461,8 +477,16 @@ img {
   line-height: 18px;
   color: #000;
   position: relative;
-
 }
+
+.catalog-header .user:hover {
+  color: #000;
+}
+
+.catalog-header .user:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 
 .catalog-header .user::before {
   content: "\1f468";
@@ -475,6 +499,14 @@ img {
   top: 13px;
 }
 
+.catalog-header .user:hover::before {
+  color: #32425c;
+}
+
+.catalog-header .user:active::before {
+  color: #c5c5c5;
+}
+
 .catalog-header .user::after {
   content: "\241b";
   font-family: "symbols-technomart";
@@ -484,6 +516,14 @@ img {
   position: absolute;
   right: 10px;
   top: 14px;
+}
+
+.catalog-header .user:hover::after {
+  color: #32425c;
+}
+
+.catalog-header .user:active::after {
+  color: #c5c5c5;
 }
 
 .user-menu {
@@ -645,6 +685,16 @@ img {
   padding: 10px 0 10px;
 }
 
+.reason a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.reason a:active {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
 .materials a {
   margin-left: 3px;
 }
@@ -792,6 +842,14 @@ img {
   text-align: center;
 }
 
+.slide a:hover {
+  background: #ca2c37;
+}
+
+.slide a:active {
+  background: #ba2732;
+}
+
 .slider button {
   font-size: 45px;
   line-height: 18px;
@@ -921,6 +979,10 @@ img {
   padding: 38px 0 0 0;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.product-item:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .popular .product-item:nth-child(5) {
