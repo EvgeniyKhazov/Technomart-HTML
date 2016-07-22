@@ -1033,6 +1033,19 @@ img {
   position: relative;
 }
 
+.actions .buy:hover {
+  background: #5fbb2d;
+}
+
+.buy:hover i {
+  color: #fff;
+}
+
+.actions .buy:active {
+  background: #518534;
+}
+
+
 .actions i {
   position: absolute;
   left: 8px;
@@ -1045,6 +1058,15 @@ img {
   border: 3px solid #63a63e;
   color: #32425c;
   padding: 9px 0 5px;
+}
+
+.actions .bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.actions .bookmark:active {
+  border: 3px solid #c1c6ce;
+  color: rgba(50, 66, 92, 0.3);
 }
 
 /*НОВЫЙ ФЛАГ*/
@@ -1133,6 +1155,14 @@ img {
   margin-bottom: 20px;
 }
 
+.manufacturer-item:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.manufacturer-item:active {
+  opacity: 0.3;
+}
+
 .manufacturer-item:nth-child(-n+5) {
   padding: 47px 0 42px 0;
 }
@@ -1213,6 +1243,11 @@ img {
   border-top: 1px solid #405069;
   padding: 13px 0 16px 22px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.services-toggle label:hover {
+  background: #293449;
 }
 
 
@@ -1246,7 +1281,6 @@ img {
   position: absolute;
   padding: 72px 0 0 80px;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 .services-slide {
@@ -1261,15 +1295,9 @@ img {
   font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
-  outline: 1px solid green;
-}
-
-.services-slide p {
-  outline: 1px solid yellow;
 }
 
 .services-delivery {
-
   background: url("../img/auto-bg.png") 100% 100% no-repeat;
 
 }
@@ -1613,7 +1641,6 @@ img {
 .footer-menu-company {
   display: inline-block;
   vertical-align: top;
-
   width: 550px;
 
 }
@@ -1660,6 +1687,16 @@ img {
   font-family: "cuprum";
   text-decoration: none;
 }
+
+.footer-menu-company a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu-company a:active {
+  text-decoration: none;
+  color: rgba(241,245,247, 0.5);
+}
+
 
 .footer-contacts {
   width: 400px;
@@ -1720,6 +1757,15 @@ img {
   text-decoration: none;
 }
 
+.footer-menu-materials a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu-materials a:active {
+  text-decoration: none;
+  color: rgba(255, 209, 128, 0.5);
+}
+
 .rights {
   display: inline-block;
   vertical-align: top;
@@ -1753,6 +1799,10 @@ img {
   border-radius: 50%;
   background: #212a3a;
   margin-right: 5px;
+}
+
+.social a:hover {
+  background: #ee3643;
 }
 
 .social .social-vk::after {
@@ -1815,6 +1865,15 @@ img {
 
 .mail a {
   color: #ffd180;
+}
+
+.mail a:hover {
+  text-decoration: underline;
+}
+
+.mail a:active {
+  text-decoration: none;
+  color: #ee3643;
 }
 
 /*КАТАЛОГ*/
@@ -1930,7 +1989,6 @@ img {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
-  outline: 1px solid red;
 }
 
 .name {
@@ -2084,6 +2142,19 @@ img {
   content: "\2611";
 }
 
+.manufacturer input[type="checkbox"] + label:hover::before {
+  color: #b5b5b5;
+}
+
+.manufacturer input[type="checkbox"]:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.manufacturer input[type="checkbox"]:disabled + label::before {
+  color: rgba(181, 181, 181, 0.3);
+}
+
+
 .power {
   padding-bottom: 59px;
 }
@@ -2103,12 +2174,23 @@ img {
   display: block;
   margin-left: 33px;
   margin-bottom: 20px;
-
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
+}
+
+.power input[type="radio"] + label:hover::before {
+  color: #b5b5b5;
+}
+
+.power input[type="radio"]:disabled + label {
+  color: rgba(181,181,181, 0.3);
+}
+
+.power input[type="radio"]:disabled + label::before {
+  color: rgba(181,181,181, 0.3);
 }
 
 .power input[type="radio"] + label::before {
@@ -2142,10 +2224,8 @@ img {
 .product {
   display: inline-block;
   vertical-align: top;
-  outline: 1px solid red;
   width: 700px;
   font-size: 0;
-
 }
 
 .sorting {
@@ -2165,7 +2245,7 @@ img {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
-
+  font-weight: normal;
   text-transform: uppercase;
   width: 240px;
   box-sizing: border-box;
@@ -2201,8 +2281,6 @@ img {
 .sorting .active {
   border: none;
   color: #ee3643;
-
-
 }
 
 .sorting a {
@@ -2210,9 +2288,11 @@ img {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
   line-height: 18px;
+}
 
-
-
+.sorting a:hover {
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #ee3643;
 }
 
 .arrow {
@@ -2230,7 +2310,6 @@ img {
   margin-right: 21px;
   position: absolute;
   top: -2px;
-
 }
 
 .arrow span:last-child::before {
@@ -2242,6 +2321,10 @@ img {
   left: 32px;
   top: -2px;
 
+}
+
+.arrow span:hover::before {
+  color: #000;
 }
 
 /*ПАГИНАТОР*/
@@ -2259,15 +2342,11 @@ img {
   list-style: none;
   display: inline-block;
   vertical-align: top;
-  width: 38px;
-  box-sizing: border-box;
-  border: 1px solid #e5e5e5;
-  border-radius: 2px;
   margin-right: 10px;
 
 }
 
-.paginator li:last-child {
+.paginator li:last-child a {
   width: 138px;
 
 }
@@ -2281,11 +2360,27 @@ img {
   text-transform: uppercase;
   text-align: center;
   padding: 9px 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  width: 38px;
+  box-sizing: border-box;
+}
 
+.paginator a:hover {
+  border: 1px solid #bdc6ca;
+}
 
+.paginator a:active {
+  border: 1px solid #ee3643;
 }
 
 .paginator .active {
+  background: #ee3643;
+  border: 1px solid #ee3643;
+  color: #fff;
+}
+
+.paginator .active:hover {
   background: #ee3643;
   border: 1px solid #ee3643;
   color: #fff;
