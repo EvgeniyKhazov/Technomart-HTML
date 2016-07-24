@@ -989,7 +989,7 @@ img {
   margin-right: 0;
 }
 
-.product .product-item:nth-child(3n+4) {
+.product .product-item:nth-child(3n+5) {
   margin-right: 0;
 
 }
@@ -1878,7 +1878,6 @@ img {
 
 /*КАТАЛОГ*/
 
-
 /*Хлебные крошки*/
 
 
@@ -2226,6 +2225,89 @@ img {
   vertical-align: top;
   width: 700px;
   font-size: 0;
+  position: relative;
+}
+
+/*Товар добавлен*/
+
+.item-added {
+  width: 620px;
+  height: 282px;
+  border-top: 7px solid #ee3643;
+  box-sizing: border-box;
+  padding: 68px 0 0 0;
+  position: absolute;
+  z-index: 20;
+  background: #fff;
+  left: -80px;
+  top: -75px;
+  box-shadow: 0 20px 40px rgba(41,52,73, 0.75);
+}
+
+.item-added:before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background: url("../img/close-bg.png");
+  top: 9px;
+  right: 9px;
+  cursor: pointer;
+}
+
+.item-added h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "cuprum";
+  font-size: 30px;
+  padding-left: 180px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.item-added h2::before {
+  content: "";
+  position: absolute;
+  background: url("../img/round-selection.png");
+  width: 66px;
+  height: 66px;
+  top: -22px;
+  left: 80px;
+}
+
+.choose-btn {
+  background: #f1f1f1;
+  font-size: 0;
+  padding: 37px 0 39px 80px;
+
+}
+
+.choose-btn a {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 38px;
+  box-sizing: border-box;
+  padding: 8px 0 0 0;
+  border-radius: 3px;
+  font-family: "cuprum";
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 20px;
+
+}
+
+.choose-btn a:first-child {
+  background: #ee3643;
+  color: #fff;
+}
+
+.choose-btn a:last-child {
+  background: #fff;
+  color: #000;
 }
 
 .sorting {
